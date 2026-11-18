@@ -7,7 +7,6 @@
   <meta name="description" content="Compare Kyoto tea, matcha, sushi and wagyu experiences in English and Simplified Chinese. Alternatives for discussion only; the anniversary itinerary is unchanged.">
   <title>Experience Comparison · Japan 2027</title>
   <link rel="stylesheet" href="experiences.css">
-  <script src="experiences-config.js" defer></script>
   <script src="experiences.js" defer></script>
 </head>
 <body>
@@ -32,14 +31,12 @@
     </div>
     <noscript><p class="notice">This comparison needs JavaScript. Open it in a browser with JavaScript enabled. / 本比较页面需要 JavaScript，请在启用 JavaScript 的浏览器中打开。 <a href="index.html">Return to itinerary / 返回行程</a></p></noscript>
     <div id="comparisons"></div>
-    <section id="vote" class="voting" aria-labelledby="vote-title">
-      <p class="kicker" data-copy="voteKicker">YOUR PREFERENCES</p>
-      <h2 id="vote-title" data-copy="voteTitle">Share your preferences</h2>
-      <p data-copy="voteIntro">Use one bilingual Google Form for both travelers. Expressing a preference does not replace an activity or make a reservation.</p>
-      <p class="notice" id="form-status" role="status"></p>
-      <p id="form-fallback" hidden><a class="resource" id="form-link" target="_blank" rel="noopener noreferrer" data-copy="openForm">Open form ↗</a></p>
-      <p class="muted" data-copy="privacy">Responses are handled by Google Forms. The form owner controls access to responses; this public comparison page does not collect, store or display votes. Use an optional nickname and avoid personal or reservation details. A form link on this public page is visible to everyone.</p>
-      <div id="form-embed"></div>
+    <section id="answers" class="answers" aria-labelledby="answer-title">
+      <p class="kicker" data-copy="answerKicker">SEND A SHORT LIST</p>
+      <h2 id="answer-title" data-copy="answerTitle">Share your choices by message</h2>
+      <p data-copy="answerIntro">Send question numbers or category names with a letter, for example Q1 = B or Sushi class = B. Use ? if undecided. These are experience choices, separate from trip Option A/B.</p>
+      <p data-copy="answerHint">Reply template — replace each blank with a letter or ?:</p>
+      <pre id="answer-template"></pre>
     </section>
     <footer>
       <p data-copy="checked">Sources checked November 17, 2026 (Los Angeles). Provider descriptions are starting points for discussion, not confirmed April 2027 offers. No authenticity scores are assigned.</p>

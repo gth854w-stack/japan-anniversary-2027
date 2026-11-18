@@ -7,9 +7,11 @@ the itinerary. No build step is needed.
 For a local preview, run `python -m http.server 8767` in this directory and open
 `http://localhost:8767/experiences.html`.
 
-Google Forms voting is disabled until a real owner-created form is configured.
-See [GOOGLE_FORM_SETUP.md](GOOGLE_FORM_SETUP.md) for the bilingual question list,
-response privacy settings, embed URL insertion and pre-merge verification.
+Each category has a question number (Q1–Q4) and stable option letters (A–C,
+with D for the fourth wagyu choice). Travelers can send a message such as
+`Q1 = B` or `Sushi class = B`. The bilingual page includes a blank reply template;
+`?` means undecided. These experience letters are separate from trip Option A/B.
+No form, account setup, submission or answer storage is involved.
 
 ## Browser checks
 
@@ -26,12 +28,10 @@ Playwright's Chromium), and accepts `BROWSER_PATH` to select another Chromium
 executable. `SCREENSHOT_DIR=/tmp/japan-comparison-shots` optionally saves captures.
 
 Checks cover both languages, 320/390/768/1440px widths, candidate origins,
-missing/invalid/configured form states, iframe preservation on language changes,
-external fallback navigation, and all 36 original itinerary configurations.
+stable question/option mappings across languages, reply instructions and template,
+absence of forms or answer collection, and all 36 original itinerary configurations.
 Original guide content is compared with the pre-feature commit `6573174` (the
 repository history must include that commit).
 
-External requests are blocked or stubbed for repeatability. The form fixture is
-test-only; these checks do not submit votes, validate Google account settings or
-prove that a real Form can load. Follow the owner checklist in the setup document
-before enabling voting. Nothing here deploys or publishes the site.
+External requests are blocked for repeatability. These checks do not verify
+external provider, map or photo loading. Nothing here deploys or publishes the site.
