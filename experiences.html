@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="description" content="Compare Kyoto tea, matcha, sushi and wagyu experiences in English and Simplified Chinese. Alternatives for discussion only; the anniversary itinerary is unchanged.">
+  <title>Experience Comparison · Japan 2027</title>
+  <link rel="stylesheet" href="experiences.css">
+  <script src="experiences-config.js" defer></script>
+  <script src="experiences.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main" data-copy="skip">Skip to comparison</a>
+  <header class="mast">
+    <div class="wrap topbar">
+      <a class="brand" href="index.html">OUR <span>ANNIVERSARY</span> / JAPAN 2027</a>
+      <div class="switch" role="group" id="language-control" aria-label="Comparison language">
+        <button id="lang-en" type="button" aria-pressed="true">English</button>
+        <button id="lang-zh" type="button" aria-pressed="false">简体中文</button>
+      </div>
+    </div>
+  </header>
+  <main id="main" class="wrap">
+    <div class="intro">
+      <a class="back" href="index.html" data-copy="back">← Back to the itinerary</a>
+      <p class="kicker" data-copy="kicker">JAPAN · APRIL 2027 · FOR DISCUSSION</p>
+      <h1 data-copy="title">Experience comparison</h1>
+      <p class="lead" data-copy="intro">Explore the trade-offs together. These alternatives are unselected and do not change the current itinerary, bookings, budget or recommendations.</p>
+      <div class="notice" data-copy="caution">Current plan means included in the guide, not booked. Origin labels record who proposed an option, not an endorsement or a ranking of authenticity. April 2027 availability is unconfirmed for every candidate.</div>
+      <nav class="category-nav" aria-label="Comparison categories" id="category-nav"></nav>
+    </div>
+    <noscript><p class="notice">This comparison needs JavaScript. Open it in a browser with JavaScript enabled. / 本比较页面需要 JavaScript，请在启用 JavaScript 的浏览器中打开。 <a href="index.html">Return to itinerary / 返回行程</a></p></noscript>
+    <div id="comparisons"></div>
+    <section id="vote" class="voting" aria-labelledby="vote-title">
+      <p class="kicker" data-copy="voteKicker">YOUR PREFERENCES</p>
+      <h2 id="vote-title" data-copy="voteTitle">Share your preferences</h2>
+      <p data-copy="voteIntro">Use one bilingual Google Form for both travelers. Expressing a preference does not replace an activity or make a reservation.</p>
+      <p class="notice" id="form-status" role="status"></p>
+      <p id="form-fallback" hidden><a class="resource" id="form-link" target="_blank" rel="noopener noreferrer" data-copy="openForm">Open form ↗</a></p>
+      <p class="muted" data-copy="privacy">Responses are handled by Google Forms. The form owner controls access to responses; this public comparison page does not collect, store or display votes. Use an optional nickname and avoid personal or reservation details. A form link on this public page is visible to everyone.</p>
+      <div id="form-embed"></div>
+    </section>
+    <footer>
+      <p data-copy="checked">Sources checked November 17, 2026 (Los Angeles). Provider descriptions are starting points for discussion, not confirmed April 2027 offers. No authenticity scores are assigned.</p>
+      <a href="index.html" data-copy="back">← Back to the itinerary</a>
+    </footer>
+  </main>
+</body>
+</html>
